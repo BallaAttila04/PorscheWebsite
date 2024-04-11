@@ -1,0 +1,12 @@
+1. - Oldal készítője: Balla Attila
+
+2. - Ezen az URL címen található a weboldal: https://ballaattila.github.io/webfejlesztes/
+
+3. - Az oldalról:
+Az oldal a Porsche 911 Turbo 1975-1977 és 1978-1989 modeljéről szól ami a felkapott nevén a legendás Porsche 930. Az oldalon számos kép mutatja be és írja le az autó specifikációit. Továbbá található egy ár kalkulátor és árajánlat kérő.
+
+4. - JS kód:
+A js mappában található a script.js és calculator.js javascript kód amit én írtam.  A script.js a kontakt/autó ajánlatkérés-nek a validálássára van. A calculator.js egy autó rendelésnek mondja meg az árát és adja meg, hogy a rendelésre hány százalékos kedvezményt kap.
+
+5. - Font:
+Google Fonts Roboto fontot használtam a Google-től

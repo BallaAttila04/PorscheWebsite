@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Customize and place an order for your Porsche 930 Turbo. Choose colors, features, and accessories to create a personalized luxury sports car.">
+    <meta name="author" content="Balla Attila">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="images/Porsche-Logo.png" alt="Porsche logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="car-order-form">
+        <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="carOrderForm" novalidate>
+            <h2>Porsche 930 Car Order Quotation</h2>
+            <p><label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname" required></p>
+            <p><label for="email">Email:</label><input type="text" name="email" id="email" required></p>
+
+            <p><label>Delivery Location:</label>
+                <label><input type="radio" name="deliveryLocation" value="Germany_Frankfurt" required> Germany,
+                    Frankfurt</label>
+                <label><input type="radio" name="deliveryLocation" value="Hungary_Budapest" required> Hungary,
+                    Budapest</label>
+                <label><input type="radio" name="deliveryLocation" value="Spain_Barcelona" required> Spain,
+                    Barcelona</label>
+            </p>
+
+            <p><label for="model">Porsche Model:</label>
+                <select name="model" id="model" required>
+                    <option value="930">I. Gen Porsche 911 Turbo</option>
+                    <option value="930">II. Gen Porsche 911 Turbo</option>
+                </select>
+            </p>
+
+            <p><label for="color">Car Color:</label><input type="color" name="color" id="color" required></p>
+
+            <p><label>Extras:</label><br>
+                <label><input type="checkbox" name="extras[]" value="Modern_Electronics"> Modern Electronics</label><br>
+                <label><input type="checkbox" name="extras[]" value="Body-kit"> Body-kit</label><br>
+                <label><input type="checkbox" name="extras[]" value="Titanium_Exhaust"> Titanium Exhaust</label><br>
+                <label><input type="checkbox" name="extras[]" value="Leather_Seats"> Leather Seats</label>
+            </p>
+
+            <p><label for="terms">Terms and Conditions:</label><input type="checkbox" name="terms" id="terms" required>
+                I accept the terms and conditions</p>
+
+            <p><input type="submit" value="Submit Order"></p>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@porsche930.com</p>
+                <p>Phone: +12 3456789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">X</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Porsche 930. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</HTML>

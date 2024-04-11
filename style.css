@@ -1,0 +1,473 @@
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+    height: fit-content;
+    margin: 1%;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin: 0;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+/* Navigation Styles */
+nav {
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    transition: color 1s ease, border-bottom 1s ease, background-color 1s ease;
+    font-size: 1.2em;
+}
+
+nav ul li a.active {
+    background-color: rgb(179, 125, 78);
+}
+
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    box-shadow: 0 1px 0 white;
+}
+
+img.logo {
+    width: 100%;
+    max-width: 7em;
+}
+
+/* Hero Styles */
+.hero {
+    background-image: url('images/image.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    width: max-content;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c29049;
+}
+
+/* Article Styles */
+article.generations {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(179, 125, 78);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+/* Image Styles */
+.about-image {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+img.porschebg {
+    width: 100%;
+}
+
+/* About Section Styles */
+.about-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.about-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Statistics Styles */
+.statistics {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 5vw;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(images/image\ \(1\).jpg);
+    background-attachment: fixed;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+    color: white;
+}
+
+.statistic-item {
+    text-align: center;
+}
+
+.statistic h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.statistic-item p {
+    font-size: 1.5em;
+}
+
+/* Photo Album Styles */
+.photo-album {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* Form Styles */
+.car-order-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-order-form h2 {
+    text-align: center;
+}
+
+.car-order-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.car-order-form input[type="text"],
+.car-order-form input[type="color"],
+.car-order-form select,
+.car-order-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.car-order-form input[type="checkbox"] {
+    margin-bottom: 16px;
+}
+
+.car-order-form input[type="submit"] {
+    background-color:#c29049;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.car-order-form input[type="submit"]:hover {
+    background-color: rgb(114, 81, 36);
+}
+
+.car-order-form label.error {
+    color: red;
+}
+
+/* Calculator Styles */
+form.calculator-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.calculator-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calculator-form select,
+.calculator-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.calculator-form button {
+    background-color:#c29049;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.calculator-form button:hover {
+    background-color:rgb(114, 81, 36);
+}
+
+.calculator-form #result {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* About Page Styles */
+.about-page-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.porsche-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.porsche-about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.porsche-about h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media all and (max-width: 600px) {
+    nav li {
+        width: 45%;
+        font-size: 75%;
+    }
+
+    .about-section {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+
+    .statistics {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        height: 100%;
+        grid-row-gap: 50px;
+    }
+
+    form th,
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .porsche-about {
+        flex-direction: column;
+    }
+
+    .porsche-about .text {
+        padding: 20px 0;
+    }
+
+    .porsche-about.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .car-order-form {
+        margin: 20px 10px;
+    }
+}
+
+@media all and (min-width: 600px) {
+
+    /* Tablet Styles */
+    header {
+        flex-basis: 23%;
+    }
+
+    .hero {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    /* Desktop Styles */
+    .container {
+        flex-direction: row;
+    }
+
+    header {
+        flex-basis: 23%;
+    }
+
+    .hero {
+        flex-basis: 100%;
+    }
+
+    .about-section {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+
+    .contact-form p input[type="text"],
+    .contact-form p input[type="email"],
+    .contact-form p select,
+    .contact-form p textarea {
+        width: calc(50% - 1%);
+    }
+
+    .porsche-about img {
+        max-width: 40%;
+        margin-right: 20px;
+    }
+
+}

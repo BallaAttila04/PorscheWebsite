@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Estimate the cost of your dream Porsche 930 Turbo with our interactive Price Calculator. Customize features, explore options, and get an instant quote.">
+    <meta name="author" content="Balla Attila">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Porsche 930 Turbo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/Porsche-Logo.png" alt="Porsche logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form id="calculatorForm" class="calculator-form">
+          <label for="generation">Select Generation:</label>
+          <select id="generation" name="generation">
+            <option value="first">Porsche 911 Turbo I. Generation</option>
+            <option value="second">Porsche 911 Turbo II. Generation</option>
+          </select>
+    
+          <label for="color">Select Color:</label>
+          <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="silver">Silver</option>
+            <option value="white">White</option>
+            <option value="yellow">Yellow</option>
+          </select>
+    
+          <label for="electronics">Modern Electronics:</label>
+          <input type="checkbox" id="electronics" name="electronics">
+    
+          <label for="exhaust">Titanium Exhaust:</label>
+          <input type="checkbox" id="exhaust" name="exhaust">
+    
+          <label for="bodyKit">Body Kit:</label>
+          <input type="checkbox" id="bodyKit" name="bodyKit">
+    
+          <label for="leatherSeats">Leather Seats:</label>
+          <input type="checkbox" id="leatherSeats" name="leatherSeats">
+    
+          <label for="location">Select Location:</label>
+          <select id="location" name="location">
+            <option value="Frankfurt">Frankfurt</option>
+            <option value="Budapest">Budapest</option>
+            <option value="Barcelona">Barcelona</option>
+          </select>
+    
+          <button type="button" onclick="calculatePrice()">Calculate Price</button>
+    
+          <p id="result">Estimated Price: $0.00</p>
+        </form>
+      </div>
+
+      <script src="js/calculator.js"></script>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@porsche930.com</p>
+                <p>Phone: +12 3456789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">X</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Porsche 930. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</HTML>
